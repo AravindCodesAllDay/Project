@@ -1,9 +1,19 @@
-<div>
-  <div class="absolute h-screen w-screen opacity-65">
+<div class="w-screen text-white">
+  <div class="absolute h-screen w-full opacity-65">
     <img src="../../assets/main.webp" alt="background" />
   </div>
+  <div class="flex p-4 items-center absolute w-full bg-black opacity-45 z-10">
+    <h2 class="mr-auto text-2xl font-bold">HALT-O</h2>
+    <ul class="flex gap-8">
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="home#application">Application</a></li>
+      <li><a href="home#park">ParkingEcosystem</a></li>
+      <li><a href="home#contact">Contact</a></li>
+    </ul>
+  </div>
   <div
-    class="relative h-screen flex flex-col justify-center items-center w-screen text-white gap-6"
+    class="relative h-screen flex flex-col justify-center items-center w-full gap-6"
   >
     <h1 class="text-7xl">The Complete Parking Ecosystem</h1>
     <h3 class="text-4xl">
@@ -22,6 +32,31 @@
   <hr class="border-2" />
   <img src="../../assets/team.webp" alt="team" class="w-2/4 mx-auto" />
 </div>
+
+<div class="w-screen p-24 flex gap-6 bg-white justify-between items-center">
+  <div class="w-2/5">
+    <img src="../../assets/India.png" alt="road" class="" />
+  </div>
+  <div
+    class="w-2/5 text-black h-full grid grid-cols-1 justify-center gap-6 border-l-2 border-black pl-4"
+  >
+    <h3>VISION:</h3>
+    <h4 class="text-2xl">We take care the parking woes</h4>
+    <p>
+      The vision of Halt-O is to create a world where parking is no longer a
+      hassle or a source of stress for drivers, and where parking lot operators
+      can maximize the use of their resources while reducing their environmental
+      impact
+    </p>
+    <a href="about#vission">
+      <button
+        class="border-2 border-black rounded-lg w-fit mx-auto px-3 py-1 hover:text-white hover:bg-black"
+      >
+        Read More
+      </button></a
+    >
+  </div>
+</div>
 <div class="w-screen p-24 flex gap-6 justify-between items-center">
   <div
     class="w-2/5 text-white h-full grid grid-cols-1 justify-center gap-6 border-l-2 pl-4"
@@ -36,39 +71,22 @@
       available parking spots and enabling drivers to reserve and pay for
       parking in advance.
     </p>
-    <button
-      class="border-2 border-white rounded-lg w-fit mx-auto px-3 py-1 hover:text-black hover:bg-white"
+    <a href="about#mission">
+      <button
+        class="border-2 border-white rounded-lg w-fit mx-auto px-3 py-1 hover:text-black hover:bg-white"
+      >
+        Read More
+      </button></a
     >
-      Read More
-    </button>
   </div>
   <div class="w-2/5">
     <img src="../../assets/road.jpg" alt="road" class="" />
   </div>
 </div>
-<div class="w-screen p-24 flex gap-6 bg-white justify-between items-center">
-  <div
-    class="w-2/5 text-black h-full grid grid-cols-1 justify-center gap-6 border-l-2 border-black pl-4"
-  >
-    <h3>VISION:</h3>
-    <h4 class="text-2xl">We take care the parking woes</h4>
-    <p>
-      The vision of Halt-O is to create a world where parking is no longer a
-      hassle or a source of stress for drivers, and where parking lot operators
-      can maximize the use of their resources while reducing their environmental
-      impact
-    </p>
-    <button
-      class="border-2 border-black rounded-lg w-fit mx-auto px-3 py-1 hover:text-white hover:bg-black"
-    >
-      Read More
-    </button>
-  </div>
-  <div class="w-2/5">
-    <img src="../../assets/India.png" alt="road" class="" />
-  </div>
-</div>
-<div class="w-screen p-24 flex gap-6 bg-white justify-between items-center">
+<div
+  class="w-screen p-24 flex gap-6 bg-white justify-between items-center"
+  id="application"
+>
   <div class="w-2/5">
     <img src="../../assets/mobile.webp" alt="road" class="" />
   </div>
@@ -85,14 +103,16 @@
       vehicle while you're away. Say goodbye to parking headaches and hello to
       Halt-O!
     </p>
-    <button
-      class="border-2 border-black rounded-lg w-fit mx-auto px-3 py-1 hover:text-white hover:bg-black"
+    <a href="application">
+      <button
+        class="border-2 border-black rounded-lg w-fit mx-auto px-3 py-1 hover:text-white hover:bg-black"
+      >
+        Read More
+      </button></a
     >
-      Read More
-    </button>
   </div>
 </div>
-<div class="w-screen p-24 flex gap-6 justify-between items-center">
+<div class="w-screen p-24 flex gap-6 justify-between items-center" id="park">
   <div
     class="w-2/5 text-white h-full grid grid-cols-1 justify-center gap-6 border-l-2 pl-4"
   >
@@ -107,11 +127,13 @@
       frustration, fatigue, improper sleep, robbery, insecurity over vehicle
       protection.
     </p>
-    <button
-      class="border-2 border-white rounded-lg w-fit mx-auto px-3 py-1 hover:text-black hover:bg-white"
+    <a href="parking-eco">
+      <button
+        class="border-2 border-white rounded-lg w-fit mx-auto px-3 py-1 hover:text-black hover:bg-white"
+      >
+        Read More
+      </button></a
     >
-      Read More
-    </button>
   </div>
   <div class="w-2/5">
     <img src="../../assets/truck.jpg" alt="road" class="" />
@@ -135,22 +157,17 @@
       The roads/flooring in our parking are recycled plastics and polyesters.
       The recycling process:
     </p>
-    <ul>
+    <ul class="list-disc ml-4">
       <li>We shred them into small pieces</li>
       <li>Adding heated blue metal</li>
       <li>Melting with the brick jelly</li>
       <li>Adding Bitumen</li>
       <li>Laying the Road</li>
-      <p>
-        By utilizing recycled plastics in our parking lot, we aim to reduce
-        waste and promote a circular economy.
-      </p>
     </ul>
-    <button
-      class="border-2 border-black rounded-lg w-fit mx-auto px-3 py-1 hover:text-white hover:bg-black"
-    >
-      Read More
-    </button>
+    <p>
+      By utilizing recycled plastics in our parking lot, we aim to reduce waste
+      and promote a circular economy.
+    </p>
   </div>
 </div>
 <div class="w-screen p-24 flex gap-6 justify-between items-center">
@@ -205,3 +222,43 @@
   referrerpolicy="no-referrer-when-downgrade"
   class="w-screen h-96"
 ></iframe>
+<div
+  class="w-screen p-24 flex gap-6 bg-white justify-between items-center"
+  id="contact"
+>
+  <div class="w-2/5 flex flex-col gap-3">
+    <h3 class="text-2xl font-bold">CONTACT</h3>
+    <p>
+      No.23 B F1, PVS Nagar, Shanthiniketan Layout, Thuraipakkam, Chennai, Tamil
+      Nadu - 600097
+    </p>
+    <p>+914448061391</p>
+    <a href="about">contacthalt-o.com</a>
+  </div>
+  <form class="flex flex-col items-center gap-3 w-2/5 text-black p-12">
+    <div class="flex gap-3 w-full">
+      <div class="flex flex-col w-full">
+        <label>FirstName*</label>
+        <input type="text" class="border-2" />
+      </div>
+      <div class="flex flex-col w-full">
+        <label>LastName</label>
+        <input type="text" class="border-2" />
+      </div>
+    </div>
+
+    <div class="flex flex-col w-full">
+      <label>Email*</label>
+      <input type="email" class="border-2" />
+    </div>
+    <div class="flex flex-col w-full">
+      <label>Message*</label>
+      <textarea rows="4" class="border-2"></textarea>
+    </div>
+    <button
+      class="border-2 bg-red-700 border-red-700 hover:text-red-700 hover:bg-white font-semibold rounded-lg px-3 py-1 text-white"
+    >
+      Send
+    </button>
+  </form>
+</div>
