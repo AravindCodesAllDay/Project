@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../pages/home/home.component';
 import { AboutComponent } from '../pages/about/about.component';
 import { ApplicationComponent } from '../pages/application/application.component';
@@ -12,3 +13,9 @@ export const routes: Routes = [
   { path: 'parking-eco', component: ParkingEcoComponent },
   { path: '**', redirectTo: 'home' },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
